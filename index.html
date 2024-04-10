@@ -268,12 +268,36 @@
         border-radius: 8px;
         box-shadow: 0px 0px 10px rgba(255, 215, 0, 1);
       }
-
+      
       @keyframes scrollImages {
         0% { transform: translateX(-130%); }
         100% { transform: translateX(100%); }
 /*         100% { transform: translateX(0%); } */
       }
+      
+         
+      .image-scroll1 {
+        display: flex;
+        animation: scrollImages1 10s linear infinite;
+      }
+
+      .image-scroll1 img {
+        width: 150px; 
+        height: auto; 
+        margin-right: 10px; 
+        border-radius: 8px;
+      }
+            
+      @keyframes scrollImages1 {
+        0% {
+          transform: translateX(-130%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+
 
 
     </style>
@@ -326,26 +350,55 @@ Say hi to Horror Cat. The games has begun.
       TOKENOMICS
     </button>
     <div class="popup1" id="popupTokenomics">
-      <div class="widget-container1">
-        <div class="info-block">
-          <div class="widget-line">Name: HORROR CAT</div>
-          <div class="widget-line">Ticker: $HORROR</div>
-          <div class="widget-line">CA: </div>
-        </div>
-        <div class="info-block">
-          <div class="widget-line">Supply: 1 Trillion</div>
-          <div class="widget-line">Tax: 0/0</div>
-        </div>
-        <div class="info-block">
-          <div class="widget-line">LP: To be Burned</div>
-          <div class="widget-line">Contract: To be Renounced</div>
-        </div>
-        <button onclick="closePopupTokenomics()" class="widget-btn">Close</button>
+  <div class="widget-container1">
+    <div class="info-block">
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 1"> Name: HORROR CAT
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 2"> Ticker: $HORROR
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 3"> CA:
       </div>
     </div>
+    <div class="info-block">
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 4"> Launch Date : TBA
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 5"> Private Sale : Check TG
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 6"> Pre Sale : TBD
+      </div>
+    </div>
+    <div class="info-block">
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 7"> Supply: 1 Trillion
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 8"> Tax: 0/0
+      </div>
+    </div>
+    <div class="info-block">
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 9"> LP: To be Burned
+      </div>
+      <div class="widget-line">
+        <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/icon1.gif?v=1712769295710" alt="Icon 10"> Contract: To be Renounced
+      </div>
+    </div>
+    <button onclick="closePopupTokenomics()" class="widget-btn">Close</button>
+  </div>
+</div>
     <a href="https://etherscan.io/" class="btn" style="bottom: 19%">BUY</a>
     <br><br><br>
             
+    
+        <div class="image-scroll1">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/a-katt.gif?v=1712768376476" alt="Image 1">
+        </div>
         <div class="image-scroll-container">
           <div class="image-scroll">
             <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/1.png" alt="Image 1">
