@@ -209,6 +209,73 @@
         background-color: rgba(255, 255, 255, 0.3);
         box-shadow: 0px 0px 5px gold;
       }
+      
+      
+      .popup1 {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 20;
+        background: url('https://cdn.glitch.global/f1e239c9-7a79-44c1-8c54-a018ec2b2695/bg11.png?v=1707987022919') center; 
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px gold;
+      }
+
+      .widget-container1 {
+/*         background-color: white; */
+        border-radius: 5px;
+/*         padding: 20px;
+        margin: 20% auto;
+        width: 60%; */
+      }
+
+      .info-block {
+        background-color: red;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .widget-line {
+        margin-bottom: 5px;
+      }
+
+      .widget-btn {
+        margin-top: 10px;
+      }
+      
+      .image-scroll-container {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;        
+      }
+
+      .image-scroll {
+        display: flex;
+        animation: scrollImages 10s linear infinite;
+      }
+
+      .image-scroll img {
+        width: 150px; 
+        height: auto; 
+        margin-right: 10px; 
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(255, 215, 0, 1.5);
+      }
+
+      @keyframes scrollImages {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+/*         100% { transform: translateX(0%); } */
+      }
+
+
     </style>
   </head>
   <body>
@@ -216,7 +283,7 @@
     <div class="menu">
       <a href="https://t.me/horrorcat_erc20" class="menu-link">Telegram</a>
       <a href="https://x.com/horrorcat_erc20" class="menu-link">X</a>
-      <a href="https://dexscreener.com/ethereum/" class="menu-link">DEX</a>   
+      <a href="https://dexscreener.com/ethereum/" class="menu-link">DEX</a>     
       
       
       <div class="menu-link" onclick="showPopupShrine()">The Shrine</div>
@@ -255,30 +322,49 @@ Say hi to Horror Cat. The games has begun.
       />
       Your browser does not support the video tag.
     </video>
-    <button id="btn" class="btn" onclick="showPopupTokenomics()" style="bottom: 19%">
+    <button id="btn" class="btn" onclick="showPopupTokenomics()" style="bottom: 35%">
       TOKENOMICS
     </button>
-    <div class="popup" id="popupTokenomics">
-      <div class="widget-container">
-        <br />
-        <div class="widget-line">Name: HORROR CAT</div>
-        <div class="widget-line">Ticker: $HORROR</div>
-        <div class="widget-line">CA: Dropping soon</div>
-        <br />
-        <br />
-        <div class="widget-line">Supply: 1 Trillion</div>
-        <div class="widget-line">Tax: 0/0</div>
-        <br />
-        <br />
-        <div class="widget-line">LP: Burned</div>
-        <div class="widget-line">Contract: Renounced</div>
-        <br />
-        <br />
+    <div class="popup1" id="popupTokenomics">
+      <div class="widget-container1">
+        <div class="info-block">
+          <div class="widget-line">Name: HORROR CAT</div>
+          <div class="widget-line">Ticker: $HORROR</div>
+          <div class="widget-line">CA: </div>
+        </div>
+        <div class="info-block">
+          <div class="widget-line">Supply: 1 Trillion</div>
+          <div class="widget-line">Tax: 0/0</div>
+        </div>
+        <div class="info-block">
+          <div class="widget-line">LP: To be Burned</div>
+          <div class="widget-line">Contract: To be Renounced</div>
+        </div>
         <button onclick="closePopupTokenomics()" class="widget-btn">Close</button>
-        <br />
       </div>
     </div>
-    <a href="https://dexscreener.com/ethereum" class="btn" style="bottom: 5%">BUY</a>
+    <a href="https://etherscan.io/" class="btn" style="bottom: 19%">BUY</a>
+    <br><br><br>
+            
+        <div class="image-scroll-container">
+          <div class="image-scroll">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/1.png" alt="Image 1">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/2.png" alt="Image 2">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/3.png" alt="Image 3">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/4.png" alt="Image 4">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/5.png" alt="Image 5">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/6.png" alt="Image 6">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/7.png" alt="Image 7">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/8.png" alt="Image 8">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/9.png" alt="Image 9">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/10.png" alt="Image 10">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/11.png" alt="Image 11">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/12.png" alt="Image 12">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/13.png" alt="Image 13">
+            <img src="https://cdn.glitch.global/c3769579-3b02-4c12-972e-afe3dfff554a/14.png" alt="Image 14">
+            
+          </div>
+        </div>
   </body>
   
   <script>
